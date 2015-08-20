@@ -3,6 +3,7 @@
 <head>
   <title>Tms</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   
   <%= csrf_meta_tags %>
 </head>
@@ -25,9 +26,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-         <li><a href="#">Sign Up</a></li>
+        <li><a href="#" ><%= icon('home') %> Home</a></li>
+
+        <li><a href="#"><%= icon('user') %> About</a></li>
+         <li><a href="#"><%= icon('sign-in')%> Sign Up</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -37,3 +39,4 @@
 </div>
 </body>
 </html>
+
